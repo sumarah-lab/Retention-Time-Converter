@@ -47,7 +47,6 @@ def convertFile(referenceFile, databaseFile, save_file_path):
 		##convert the retention times or retention indices and save output
 		newFile = pd.DataFrame({'Compounds':rawFile.iloc[:,0], 'Converted':cs(rawFile.iloc[:,1].values)})
 	
-		print('test')
 		newFile.to_csv(save_file_path,index=False)
 		
 	else:
