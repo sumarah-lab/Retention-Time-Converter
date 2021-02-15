@@ -41,7 +41,7 @@ def convertFile(referenceFile, databaseFile, save_file_path):
 		#Start interpolator function
 		cs = Akima1DInterpolator(ref_retention_time, index)
 
-        #Open mzML conversion file
+        	#Open mzML conversion file
 		rawFile = pd.read_csv('Compounds.csv')
         
 		##convert the retention times or retention indices and save output
